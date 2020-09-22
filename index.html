@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Galería de Arte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de arte virtual, pensada para acercarte las obras más emblemáticas de los artistas que hicieron historia.">
+    <meta name="keywords" content="arte, galería de arte, old masters, art, painting, pintura, óleo, pintura al óleo">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/jquery.flipster.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up p-3"></i></button>
+    <header>      
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-darker">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main class="d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-between vertical-align-middle">
+          <div class="col-sm-12 col-lg-4">
+            <h1 class="main__title mb-5 text-light animate__animated animate__fadeInUp animate__slow">Descubrí el arte.</h1>
+            <p class="mb-5 text-light">
+              Te damos la bienvenida a este espacio virtual, en donde podrás conocer las obras más emblemáticas de los llamados “old masters” (antiguos maestros). 
+            </p>
+          </div>
+          <div class="flipster col-lg-8 align-self-center pl-lg-1">
+            <ul class="flip-items">
+              <li>
+                <img src="img/paintings/a-la-recherche-du-temps-perdu.jpg" alt="A La Recherche Du Temps Perdu">
+              </li>
+              <li>
+                <img src="img/paintings/ophelia.jpg" alt="Ophelia">  
+              </li>
+              <li>
+                <img src="img/paintings/el-beso.jpg" alt="El Beso">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>    
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="text-light">
+              En historia del arte, ”old master” se refiere a cualquier pintor experto que trabajó en Europa antes de 1800, o a una pintura de dicho artista. Una "impresión maestra antigua" es una impresión original (por ejemplo, un grabado o aguafuerte) realizada por un artista en el mismo período.
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p class="text-light">
+              En teoría, "old master" se aplica sólo a artistas que fueron completamente capacitados, fueron Maestros de su gremio de artistas local y trabajaron de forma independiente, pero en la práctica, las pinturas producidas por alumnos o talleres a menudo se incluyen en el alcance del término. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="art" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 art__card wow animate__animated animate__fadeInUp animate__slow">
+            <div class="card border-0 text-white h-100">
+              <img class="card-img-top" src="img/paintings/lady-godiva.jpg" alt="Lady Godiva">
+              <div class="card-body bg-dark">
+                <h5 class="card-subtitle mt-1 mb-2 text-muted">Lady Godiva</h5>
+                <a href="john-collier.html">
+                  <h4 class="card-title mb-3 text-white">John Collier</h4>
+                </a>
+                <p class="card-text">Collier retrata la puesta en marcha del reto de la condesa, el punto de inflexión en la trama de la leyenda de Lady Godiva, siendo así una de las representaciones más destacadas de la misma.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 art__card wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
+            <div class="card border-0 text-white h-100">
+              <img class="card-img-top" src="img/paintings/pandora.jpg" alt="Pandora">
+              <div class="card-body bg-dark">
+                <h5 class="card-subtitle mt-1 mb-2 text-muted">Pandora</h5>
+                <a href="alexandre-cabanel.html">
+                  <h4 class="card-title mb-3 text-white">Alexandre Cabanel</h4>
+                </a>
+                <p class="card-text">Cabanel representa a la soprano sueca Christine Nilsson como Pandora, la mujer de la mitología griega que abrió una caja prohibida, liberando todos los problemas que afligen a la humanidad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 art__card wow animate__animated animate__fadeInUp animate__delay-2s animate__slow">
+            <div class="card border-0 text-white h-100">
+              <img class="card-img-top" src="img/paintings/lady-agnew.jpg" alt="Lady Agnew">
+              <div class="card-body bg-dark">                  
+                <h5 class="card-subtitle mt-1 mb-2 text-muted">Lady Agnew</h5>
+                <a href="john-singer-sargent.html">
+                  <h4 class="card-title mb-3 text-white">John Singer Sargent</h4>  
+                </a>
+                <p class="card-text">Sargent pudo retratar la mirada directa y la pose informal de Lady Agnew, enfatizadas por la tela fluida y la faja lila de su vestido, asegurando el impacto sorprendente del retrato.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 art__card wow animate__animated animate__fadeInUp animate__slow">
+            <div class="card border-0 text-white h-100 mt-lg-4">
+              <img class="card-img-top" src="img/paintings/las-meninas.jpg" alt="Las Meninas">
+              <div class="card-body bg-dark">
+                <h5 class="card-subtitle mt-1 mb-2 text-muted">Las Meninas</h5>
+                <a href="diego-velazquez.html">
+                  <h4 class="card-title mb-3 text-white">Diego Velázquez</h4>
+                </a>  
+                <p class="card-text">Representa a la infanta Margarita de Austria, y a otros personajes. El artista resolvió con gran habilidad los problemas de composición del espacio, gracias al dominio que tenía del color y a la facilidad para caracterizar a los personajes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 art__card wow animate__animated animate__fadeInUp animate__delay-2s animate__slow">
+            <div class="card border-0 text-white h-100 mt-lg-4">
+              <img class="card-img-top" src="img/paintings/girl-with-a-pearl-earring.jpg" alt="Girl With a Pearl Earring">
+              <div class="card-body bg-dark">
+                <h5 class="card-subtitle mt-1 mb-2 text-muted">Girl With a Pearl Earring</h5>
+                <a href="johannes-vermeer.html">
+                  <h4 class="card-title mb-3 text-white">Johannes Vermeer</h4>
+                </a>
+                <p class="card-text">Es una de las obras maestras del pintor neerlandés realizada entre 1665 y 1667, y, como el nombre indica, utiliza un pendiente de perla como punto focal.</p>
+              </div>
+            </div>  
+          </div>
+          <div class="col-md-4 art__card wow animate__animated animate__fadeInUp animate__delay-3s animate__slow">            
+            <div class="card border-0 text-white h-100 mt-lg-4">
+              <img class="card-img-top" src="img/paintings/rembrandt.jpg" alt="Rembrandt Self Portrait">
+              <div class="card-body bg-dark">
+                <h5 class="card-subtitle mt-1 mb-2 text-muted">Rembrandt Self-Portrait</h5>
+                <a href="rembrandt-harmenszoon.html">
+                  <h4 class="card-title mb-3 text-white">Rembrandt Harmenszoon</h4>
+                </a>  
+                <p class="card-text">Las decenas de autorretratos de Rembrandt fueron una parte importante de su obra. Rembrandt creó cerca de cien autorretratos que incluyen más de cuarenta pinturas, treinta y un aguafuertes y unos siete dibujos.</p>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </section>
+    <section id="quote" class="section">
+        <div class="container">          
+          <blockquote class="col-md-6 blockquote quote-text float-right p-3">     
+            <p class="mb-0 text-light">"No hay reglas. Así es como nace el arte, cómo ocurren los avances. Ir en contra de las reglas o ignorar las reglas. De eso se trata la invención."</p>
+            <footer class="blockquote-footer">Helen <cite title="Source Title">Frankenthaler</cite></footer>
+          </blockquote>
+        </div>
+    </section>  
+    <section id="cta" class="cta section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h3 class="display-4 mb-4">Ayudanos a crecer</h3>
+            <p>Nos gustaría saber tu opinión sobre las obras aquí expuestas, y también que nos ayudes a crecer. Envianos un mensaje con tus recomendaciones, y sé parte de la comunidad.</p>
+          </div>
+          <div class="col-lg-3 align-self-center">
+            <a class="cta-btn p-4 float-lg-right" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer text-white">
+      <div class="container">
+        <div class="row">
+          <p class="col-12 text-center">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a href="#" class="social-item"><span class="fab fa-facebook-f"></span></a>
+            <a href="#" class="social-item ml-3 mr-3"><span class="fab fa-instagram"></span></a>
+            <a href="#" class="social-item"><span class="fab fa-twitter"></span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Main --> 
+    <script src="dist/js/main.js"></script>    
+    <!-- Flipster -->
+    <script src="dist/js/jquery.flipster.min.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ae54c90eda.js" crossorigin="anonymous"></script>
+    <!-- Wow -->
+    <script src="dist/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>   
+  </body>
+</html>

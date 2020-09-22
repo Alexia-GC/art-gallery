@@ -1,0 +1,12 @@
+.footer {
+  padding: 3em 0;
+  background-color: $color-grey;
+}
+
+.social-item {
+  color: $color-white;
+  &:hover {
+    color: $color-light-green;
+    transition: 0.5s;
+  }
+}
