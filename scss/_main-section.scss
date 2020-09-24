@@ -1,5 +1,62 @@
-main {
+.main {
   background-color: $color-grey;
   min-height: 100vh;
+  position: relative;
+  // &__title {
+  //   position: relative;
+  //   color: #262626;
+  // }
+  // &__title:before {
+  //   background: $color-white;
+  //   color: $color-grey;
+  //   content: 'Descubrí el arte.';
+  //   overflow: hidden;
+  //   position: absolute;  
+  //   top: 0;  
+  //   left: 0;
+  //   -webkit-clip-path: polygon(0% 0% , 30% 0%, 30% 100%, 0% 100%);  
+  //   clip-path: polygon(0% 0% , 30% 0%, 30% 100%, 0% 100%);
+  //   animation: slide 4s 1s linear infinite; 
+  // }
 }
 
+@keyframes slide {      
+  50% {     
+    -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%); 
+  } 
+}  
+
+// .wrap {
+//   perspective-origin: 50% 50%;
+// }
+
+// $green: #7ceaa4;
+// $purple: #3b3d54;
+
+// .svg{
+// 	stroke:$green;
+// 	position:absolute;
+// 	bottom: -100vh;
+// 	transform-style: preserve-3d;
+// }
+
+// $total: 10;
+// @for $i from 1 through $total {
+// 	$scale:random(2) - .4;
+	
+// 	.svg:nth-child(#{$i}){
+// 		left:random(120) * 1% - 20;
+// 		animation: raise#{$i} 6 + random(15) +s linear infinite;
+// 		animation-delay:random(5) - 5 + s;
+// 		transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+// 		z-index: $i - 7;
+// 		filter: blur($i - 6 + px);
+
+// 	  @keyframes raise#{$i} {
+// 		  to{
+// 			 bottom:150vh;
+// 			 transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+// 			}
+// 		}
+// 	}
+// }

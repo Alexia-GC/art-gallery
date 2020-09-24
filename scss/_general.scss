@@ -1,28 +1,27 @@
-$color-grey: #262626;
-$color-black: #0e0d0d;
+$color-grey: #212b35;
+$color-black: #02777e;
 $color-white: #f1f1f1;
 $color-green: #028C94;
 $color-light-green:#12c9d6;
 $overlay: rgba(0, 9, 0, 0.9);
-$primary-font: 'Playfair Display', serif;
-$secondary-font: 'Raleway', sans-serif;
+$primary-font: 'DM Serif Display', serif;
+$secondary-font: 'Red Hat Display', sans-serif;
 $font-weights: (
   "regular": 300,
   "bold": 700
 );
 $font-sizes: (
-  "h1": 5.3rem,
-  "h2": 3.8rem,
-  "h3": 1.5rem,
-  "p": 1.1rem
+  "h1": 5.9rem,
+  "h2": 4.5rem,
+  "h3": 2rem,
+  "p": 1.2rem
 );
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+$line-height: 60px;
+$line-height-abs: -60px;
 
-@font-face {
-  font-family: Raleway;
-  src: url(../fonts/Raleway.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 
 * {
   box-sizing: border-box;
@@ -32,9 +31,50 @@ $font-sizes: (
   list-style: none;
 }
 
+a {
+  display: inline-block;
+  position: relative;
+}
+
 a:hover {
   text-decoration: none;
   list-style: none;
+}
+
+/*effect-box*/
+a.effect-box:after,
+a.effect-box:before {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 2em;
+  width: 100%;
+  margin-top: -5px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;	
+}
+
+a.effect-box:before {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  -webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+a.effect-box:after {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-box:hover:after,
+a.effect-box:hover:before {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 h1, h2, h3, h4 {
@@ -43,6 +83,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: map-get($font-sizes, h1);
+  line-height: 6rem;
 }
 
 h2 {
@@ -65,7 +106,7 @@ p {
 }
 
 section {
-  padding: 12vh 0;
+  padding: 15vh 0;
   overflow: hidden;
 }
 
@@ -78,7 +119,40 @@ section {
   outline: none;
   z-index: 999;
   bottom: 3%;
-  right: 5%;
+  right: 2%;
   border-radius: 4px; 
   cursor: pointer;
+}
+
+.c-scrolldown {
+	width: 1px;
+	height: $line-height;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	.c-line {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%);
+		background-position: 0 $line-height-abs;
+		background-size: 100% 200%;
+		animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+	}
+}
+
+@keyframes scrolldown {
+	0%{
+		background-position: 0 $line-height-abs;
+	}
+	75% {
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 0 $line-height;
+	}
 }

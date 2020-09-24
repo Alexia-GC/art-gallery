@@ -1,4 +1,12 @@
-#art {
-  background-color: $color-black;
+.art {
+  background-color: $color-grey;
+  &__card {
+    max-width: 480px;
+  }
+
+  &__card--active {
+    padding-top: 8rem;
+    max-width: 480px;
+  }
 }
 
