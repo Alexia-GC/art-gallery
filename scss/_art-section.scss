@@ -1,12 +1,36 @@
 .art {
-  background-color: $color-grey;
+  background-color: $color-main;
   &__card {
     max-width: 480px;
+    z-index: 2;
+  }  
+  &__card:hover img {    
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    position: relative;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
   &__card--active {
     padding-top: 8rem;
     max-width: 480px;
+  }
+  &__card-img {
+    width: 100%;
+  }
+  &__card--active:hover img {    
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    position: relative;   
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  &__card-body {
+    padding-top: 2vh;
   }
 }
 

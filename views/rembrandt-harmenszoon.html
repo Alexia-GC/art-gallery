@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">  
-    <title>John Collier - Galería de Arte</title>
+    <meta charset="UTF-8">
+    <title>Rembrandt Harmenszoon - Galería de Arte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Galería de arte virtual, pensada para acercarte las obras más emblemáticas de los artistas que hicieron historia.">
     <meta name="keywords" content="arte, galería de arte, old masters, art, painting, pintura, óleo, pintura al óleo">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/jquery.flipster.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/jquery.flipster.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/main.css">
   </head>
   <body>
     <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up p-3"></i></button>
-    <header>      
+    <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-darker">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="logo">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../img/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -27,34 +27,32 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+                  <a class="nav-link effect-underline" href="artistas.html">Artistas</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li> -->
+                <li class="nav-item active">
+                  <a class="nav-link effect-underline" href="contacto.html">Contacto</a>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
-    </header>    
-    <section id="file" class="section one-painting d-flex file">
+    </header>   
+    <section id="file" class="section six-painting d-flex file">
         <div class="container">
-          <div class="row align-items-center file__content">
-            <div class="col-lg-6 col-md-12 wow animate__animated animate__fadeInLeft animate__slower">
-              <img src="img/artists/john-collier.jpg" alt="John Collier">
+          <div class="row align-items-center file__content d-flex justify-content-between">
+            <div class="col-lg-5 col-md-12 wow animate__animated animate__fadeInLeft animate__slower">
+              <img src="../img/artists/rembrandt.jpg" alt="Rembrandt Harmenszoon">
             </div>
             <div class="col-lg-6 col-md-12 align-self-center">
               <h1 class="file__title">
-                John Collier
+                Rembrandt Harmenszoon
               </h1>
               <p class="file__paragraph">
-                John Maler Collier (27 de enero de 1850 — 11 de abril de 1934) fue un escritor y pintor británico de estilo prerrafaelita, uno de los retratistas más destacados de su generación. Se casó con dos de las hijas de Thomas Huxley. Fue uno de los 24 miembros fundadores de la Sociedad Real de Retratistas (Royal Society of Portrait Painters), de la que llegó a ser vicepresidente. Fue también miembro del Instituto Real de Pintores al Óleo (Royal Institute of Oil Painters). Expuso no menos de 130 pinturas en la Royal Academy y 165 en la Sociedad Real de Retratistas, así como muchas otras en galerías por todo el país y en el extranjero. Fue autor de La cartilla de Arte (The Primer of Art, 1882), de Manual de pintura al óleo (A Manual of Oil Painting, 1886) y de El arte del retrato (The Art of Portrait Painting, 1905). En 1920 le fue concedida la Orden del Imperio Británico. Le fue dedicado un libro, El arte del honorable John Collier (The Art of the Honourable John Collier, 1914), escrito por W.H. Pollock y publicado por el Art Journal1​, en el que se enumeran todas sus obras importantes entre 1875 y 1914, tanto los retratos como las escenas históricas o dramáticas. Tiene 50 ilustraciones y 6 láminas en color de sus trabajos, y una fotografía interesante de su estudio.
-              </p>
+                Fue un pintor y grabador neerlandés. La historia del arte lo considera uno de los mayores maestros barrocos de la pintura y el grabado, 
+                siendo con seguridad el artista más importante de la historia de los Países Bajos. Su aportación a la pintura coincide con lo que 
+                los historiadores han dado en llamar la edad de oro neerlandesa, el considerado momento cumbre de su cultura, ciencia, comercio,
+                poderío e influencia política. Habiendo alcanzado el éxito en la juventud, sus últimos años estuvieron marcados por la tragedia personal
+                y la ruina económica.</p>
             </div>
           </div>
         </div> 
@@ -89,11 +87,11 @@
       </div>
     </footer>
     <!-- Bootstrap -->
-    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- Main --> 
-    <script src="dist/js/main.js"></script>    
+    <script src="../../dist/js/main.js"></script>    
     <!-- Flipster -->
-    <script src="dist/js/jquery.flipster.min.js"></script>
+    <script src="../../dist/js/jquery.flipster.min.js"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/ae54c90eda.js" crossorigin="anonymous"></script>
   </body>

@@ -1,7 +1,6 @@
 @each $pinturas in one, two, three, four, five, six {
   .#{$pinturas}-painting {
-    background:
-    url('../../img/bk/#{$pinturas}.jpg') center 15% no-repeat fixed;
+    background: url('../../img/bk/#{$pinturas}.jpg') center 15% no-repeat fixed;
     background-size: cover;
   }
 }

@@ -1,6 +1,7 @@
 #quote {
   background: url('../../img/paintings/angel-caido.jpg') $overlay center 35% no-repeat;
   background-size: cover;
+  min-height:50vh;
   .quote-text {
     background: $overlay;
   }

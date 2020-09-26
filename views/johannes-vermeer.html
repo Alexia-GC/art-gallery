@@ -2,24 +2,24 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Diego Velázquez - Galería de Arte</title>
+    <title>Johannes Vermeer - Galería de Arte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Galería de arte virtual, pensada para acercarte las obras más emblemáticas de los artistas que hicieron historia.">
     <meta name="keywords" content="arte, galería de arte, old masters, art, painting, pintura, óleo, pintura al óleo">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/jquery.flipster.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/jquery.flipster.css">
+    <link rel="stylesheet" type="text/css" href="../../dist/css/main.css">
   </head>
   <body>
     <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up p-3"></i></button>
-    <header>      
+    <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-darker">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="logo">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../img/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -27,35 +27,32 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+                  <a class="nav-link effect-underline" href="artistas.html">Artistas</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li> -->
+                <li class="nav-item active">
+                  <a class="nav-link effect-underline" href="contacto.html">Contacto</a>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
     </header>    
-    <section id="file" class="section four-painting d-flex file">
+    <section id="file" class="section five-painting d-flex file">
         <div class="container">
-          <div class="row align-items-center file__content">
-            <div class="col-lg-6 col-md-12 wow animate__animated animate__fadeInLeft animate__slower">
-              <img src="img/artists/diego-velazquez.jpg" alt="Diego Velázquez">
+          <div class="row align-items-center file__content d-flex justify-content-between">
+            <div class="col-lg-5 col-md-12 wow animate__animated animate__fadeInLeft animate__slower">
+              <img src="../img/artists/johannesvermeer.jpg" alt="Johannes Vermeer">
             </div>
             <div class="col-lg-6 col-md-12 align-self-center">
               <h1 class="file__title">
-                Diego Velázquez
+                Johannes Vermeer
               </h1>
               <p class="file__paragraph">
-                Diego Rodríguez de Silva y Velázquez (Sevilla, bautizado el 6 de junio de 15991​-Madrid, 6 de agosto de 1660), conocido como Diego Velázquez, fue un pintor barroco español considerado uno de los máximos exponentes de la pintura española y maestro de la pintura universal. 
-                Pasó sus primeros años en Sevilla, donde desarrolló un estilo naturalista de iluminación tenebrista, por influencia de Caravaggio y sus seguidores. A los 24 años se trasladó a Madrid, donde fue nombrado pintor del rey Felipe IV y cuatro años después fue ascendido a pintor de cámara, el cargo más importante entre los pintores de la corte. A esta labor dedicó el resto de su vida. Su trabajo consistía en pintar retratos del rey y de su familia, así como otros cuadros destinados a decorar las mansiones reales. Su presencia en la corte le permitió estudiar la colección real de pintura que, junto con las enseñanzas de su primer viaje a Italia, donde conoció tanto la pintura antigua como la que se hacía en su tiempo, fueron influencias determinantes para evolucionar a un estilo de gran luminosidad, con pinceladas rápidas y sueltas.
-              </p>
+                Johannes Vermeer van Delft (bautizado en Delft el 31 de octubre de 1632-ibídem, 15 de diciembre de 1675), llamado por sus contemporáneos
+                Joannis ver Meer o Joannis van der Meer e incluso Jan ver Meer, es uno de los pintores neerlandeses más reconocidos del arte Barroco. 
+                Vivió durante la llamada Edad de Oro neerlandesa, en la cual las Provincias Unidas de los Países Bajos experimentaron un extraordinario florecimiento político, económico y cultural.
+                La obra completa de Vermeer es muy reducida; solamente se conocen 33 a 35 cuadros.​ Esto pudo deberse a que pintaba para mecenas,
+                por encargo, más que para el mercado de arte.</p>
             </div>
           </div>
         </div> 
@@ -90,11 +87,11 @@
       </div>
     </footer>
     <!-- Bootstrap -->
-    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- Main --> 
-    <script src="dist/js/main.js"></script>    
+    <script src="../../dist/js/main.js"></script>    
     <!-- Flipster -->
-    <script src="dist/js/jquery.flipster.min.js"></script>
+    <script src="../../dist/js/jquery.flipster.min.js"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/ae54c90eda.js" crossorigin="anonymous"></script>
   </body>

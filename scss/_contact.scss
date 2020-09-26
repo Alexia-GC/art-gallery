@@ -1,10 +1,10 @@
 .contact {
-  background-color: $color-grey;
+  background-color: $color-main;
   &__title {
     margin-top:8vh;
   }
   input, textarea {
-    background-color: $color-grey !important;
+    background-color: $color-main !important;
     color: $color-white;
   }
   button {
@@ -12,14 +12,14 @@
     display: inline-block;
     transition: 0.5s;
     margin: 10px;
-    border: 2px solid $color-white;
+    border: 1px solid $color-white;
     color:$color-white;
     background-color: transparent;
     &:hover {    
-        background: $color-white;
-        border: 2px solid $color-white;
-        color: $color-grey;
-        text-decoration: none;
+      background: $color-main;
+      border: 1px solid $color-green;
+      color: $color-green;
+      text-decoration: none;
     }
   }
 }

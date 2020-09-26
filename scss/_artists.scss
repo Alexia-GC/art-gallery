@@ -1,0 +1,71 @@
+@each $artists in alexandrecabanel, diegovelazquez, johannesvermeer, johncollier, johnsingersargent, rembrandt {
+  .#{$artists}-artistas {
+    background: url('../../img/artists/#{$artists}.jpg') center 25% no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+.artists {
+  padding-top: 8vh;
+  padding-bottom: 0;
+}
+
+.artists__wrap div[class*=gridy] {
+  float: left;
+  position: relative;
+}
+
+.artists__wrap .gridy-1 {
+  width: 100%;
+}
+.artists__wrap .gridy-2 {
+  width: 100%;
+}
+.artists__wrap .gridy-3 {
+  width: 100%;
+}
+.artists__wrap .gridyhe-1 {
+  height: 320px;
+}
+.artists__wrap .gridyhe-2 {
+  height: 320px;
+}
+
+.artist__wrap-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.artist__wrap-title h3 {
+  font-size: 24px;
+  color: $color-white;
+  position: relative;
+  opacity: 0;
+}
+
+.artist__wrap-title * {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.artist__wrap-title:hover h3 {
+  opacity: 1;
+}
+
+.artist__wrap-title:hover {
+  background: $overlay;
+}
+
