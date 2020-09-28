@@ -61,6 +61,9 @@
 @media screen and (max-width: 1200px) {
   .main__title {
     font-size: map-get($font-sizes, h2);
+  }
+  .contact__title {
+    font-size: map-get($font-sizes, h3);
     }
 }
 
