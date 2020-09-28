@@ -16,9 +16,11 @@
     margin-top: 5vh;    
   }
   .art__card {
-    margin-top: 5vh;
     max-width: 100%;    
-  }  
+  }
+  .art__card:nth-child(3) {
+    margin-top: 5vh;
+  }
   .art__card--active {
     padding-top: 5vh;
     max-width: 100%;
