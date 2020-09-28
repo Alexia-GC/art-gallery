@@ -5,20 +5,20 @@
   .main__title {
     padding-top: 10vh;
   }
-  .artists__wrap .gridyhe-2 {
-    height: 320px;
-  }
-  .artists__wrap {
+  .artists__wrap .gridy-1 {
     width: 100%;
   }
-  .artists__wrap .gridy-1 {
-    width: 50%;
-  }
   .artists__wrap .gridy-2 {
-    width: 50%;
+    width: 100%;
   }
   .artists__wrap .gridy-3 {
     width: 100%;
+  }
+  .artists__wrap .gridyhe-1 {
+    height: 320px;
+  }
+  .artists__wrap .gridyhe-2 {
+    height: 320px;
   }
 }
 
