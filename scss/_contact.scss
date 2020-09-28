@@ -5,6 +5,23 @@
     background-color: $color-main !important;
     color: $color-white;
   }
+  &__title {
+    margin-bottom: 10vh;
+  }
+  .cta-btn {
+    display: inline-block;
+    transition: 0.5s;
+    font-weight: map-get($font-weights, bold);
+    margin: 10px;
+    border: 1px solid $color-white;
+    color:$color-white;
+    &:hover {    
+      background: $color-main;
+      border: 1px solid $color-green;
+      color: $color-green;
+      text-decoration: none;
+    }
+  }
   button {
     font-weight: map-get($font-weights, bold);
     display: inline-block;

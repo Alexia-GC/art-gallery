@@ -5,6 +5,21 @@
   .main__title {
     padding-top: 10vh;
   }
+  .artists__wrap .gridyhe-2 {
+    height: 320px;
+  }
+  .artists__wrap {
+    width: 100%;
+  }
+  .artists__wrap .gridy-1 {
+    width: 50%;
+  }
+  .artists__wrap .gridy-2 {
+    width: 50%;
+  }
+  .artists__wrap .gridy-3 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -46,21 +61,6 @@
 @media screen and (max-width: 1200px) {
   .main__title {
     font-size: map-get($font-sizes, h2);
-    }
-    .artists__wrap .gridyhe-2 {
-      height: 320px;
-    }
-    .artists__wrap {
-      width: 100%;
-    }
-    .artists__wrap .gridy-1 {
-      width: 50%;
-    }
-    .artists__wrap .gridy-2 {
-      width: 50%;
-    }
-    .artists__wrap .gridy-3 {
-      width: 100%;
     }
 }
 
