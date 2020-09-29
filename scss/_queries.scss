@@ -9,10 +9,7 @@
   }
   li {
     padding: 0 0 2vh 0;
-  }
-  .main__title {
-    padding-top: 10vh;
-  }
+  }  
   .artists__wrap .gridy-1 {
     width: 100%;
   }
@@ -31,6 +28,9 @@
 }
 
 @media screen and (max-width: 992px) {
+  .main__title {
+    padding-top: 10vh;
+  }
   .flipster {
     padding-top: 5vh;
     padding-bottom: 15vh;

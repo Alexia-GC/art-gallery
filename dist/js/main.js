@@ -60,33 +60,33 @@ var cursor = {
         });
   
   
-        document.addEventListener('mousemove', function(e) {
-            // Show the cursor
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
+document.addEventListener('mousemove', function(e) {
+    // Show the cursor
+    self.cursorVisible = true;
+    self.toggleCursorVisibility();
 
-            // Position the dot
-            self.endX = e.pageX;
-            self.endY = e.pageY;
-            self.$dot.style.top = self.endY + 'px';
-            self.$dot.style.left = self.endX + 'px';
-        });
-        
-        // Hide/show cursor
-        document.addEventListener('mouseenter', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 1;
-            self.$outline.style.opacity = 1;
-        });
-        
-        document.addEventListener('mouseleave', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 0;
-            self.$outline.style.opacity = 0;
-        });
-    },
+    // Position the dot
+    self.endX = e.pageX;
+    self.endY = e.pageY;
+    self.$dot.style.top = self.endY + 'px';
+    self.$dot.style.left = self.endX + 'px';
+});
+
+// Hide/show cursor
+document.addEventListener('mouseenter', function(e) {
+    self.cursorVisible = true;
+    self.toggleCursorVisibility();
+    self.$dot.style.opacity = 1;
+    self.$outline.style.opacity = 1;
+});
+
+document.addEventListener('mouseleave', function(e) {
+    self.cursorVisible = true;
+    self.toggleCursorVisibility();
+    self.$dot.style.opacity = 0;
+    self.$outline.style.opacity = 0;
+});
+},
     
     animateDotOutline: function() {
         var self = this;
