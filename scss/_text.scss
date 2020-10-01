@@ -58,7 +58,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: map-get($font-sizes, h1);
-  line-height: 6rem;
+  line-height: 5rem;
 }
 
 h2 {
@@ -68,7 +68,7 @@ h2 {
 
 h3 {
   font-size: map-get($font-sizes, h3);
-  line-height: 2rem;  
+  line-height: 3rem;  
 }
 
 h4 {
