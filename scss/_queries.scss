@@ -3,12 +3,18 @@
     font-size: map-get($font-sizes, h3);
     line-height: 3rem;
   }
+  .file__title {
+    margin-bottom:0.8rem;
+  }
   .contact__title {
     font-size: map-get($font-sizes, h4);
     line-height: 2.5rem;  
   }
   li {
-    padding: 0 0 2vh 0;
+    padding: 0;
+  }
+  li:last-child {
+    padding: 0 0 1.5vh 0;
   }  
   .artists__wrap .gridy-1 {
     width: 100%;
