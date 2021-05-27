@@ -1,8 +1,8 @@
 {
-  "author": "Alexia Glibota",
-  "description": "Descripcion de mi Package",
+  "author": "Alexia GC",
+  "description": "",
   "license": "MIT",
-  "name": "coderhouse",
+  "name": "art-gallery",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
     "build:css": "npm run css && npm run css-autoprefixer",

@@ -12,7 +12,6 @@ $line-height-abs: -3rem;
   padding: 0;
   text-decoration: none;
 	list-style: none;
-	cursor: none;
 }
 
 .bg-darker {
@@ -36,7 +35,6 @@ section {
   bottom: 3%;
   right: 2%;
   border-radius: 4px; 
-  cursor: pointer;
 }
 
 .c-scrolldown {
@@ -58,35 +56,6 @@ section {
 		background-size: 100% 200%;
 		animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
 	}
-}
-
-.cursor-dot,
-.cursor-dot-outline {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out,
-              transform 0.3s ease-in-out;
-  z-index:999;
-}
-
-.cursor-dot {
-  $size: 1rem;
-  width: $size;
-  height: $size;
-  background-color: $color-green;
-    
-}
-
-.cursor-dot-outline {
-  $size: 2rem;
-  width: $size;
-  height: $size;
-  background-color: rgba($color-green, 0.5);
 }
 
 @keyframes scrolldown {
