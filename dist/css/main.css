@@ -239,7 +239,7 @@ ul li a:hover {
 
 .artists {
   padding: 0;
-  overflow: initial !important;
+  background-color: #212b35;
 }
 
 .artists__wrap div[class*=gridy] {
