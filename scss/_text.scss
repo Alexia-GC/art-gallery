@@ -80,5 +80,5 @@ p {
   font-family: $secondary-font;
   font-weight: map-get($font-weights, regular);
   font-size: map-get($font-sizes, p);
-  line-height: 2em;
+  line-height: 1.8em;
 }
